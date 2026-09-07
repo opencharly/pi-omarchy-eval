@@ -1,0 +1,6 @@
+{
+  "name": "pi-omarchy-eval",
+  "version": "2026.250.1644",
+  "description": "Pi package: omarchy PR-eval lane skills + prompts. Agents live in the opencharly/opencharly umbrella (.pi/agents/omarchy-*).",
+  "license": "MIT"
+}
