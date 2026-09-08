@@ -49,12 +49,12 @@ provider candies, the PR's channel golden at 2G/1cpu, box validate green),
 redo-run (infra/lock/media-pull on a sound config), redo-read (media incomplete before
 grading), escalate (loop guard ≥3 redo entrances → council, never a silent re-run).
 A finding closes only with a setup change + re-run evidence. Contract:
-`opencharly/eval-omarchy` `eval/references/full-loop.md`.
+`opencharly/eval-omarchy` `skills/omarchy-eval-full-loop/SKILL.md`.
 
 ## Lane rules (the binding single source)
 
 The 10 standing rules, tier semantics, oracle marker/path rules, media contract and
-cold-reader rubric live in `opencharly/eval-omarchy` `eval/PR-EVAL-LANE.md` (+ its
+cold-reader rubric live in `opencharly/eval-omarchy` `skills/omarchy-eval-lane/SKILL.md` (+ its
 `eval/references/*.md`) — THIS SKILL ONLY POINTS THERE (R3). General eval procedure,
 beds and guardrails: `/charly-distros:omarchy-eval`, `/charly-check:check`.
 

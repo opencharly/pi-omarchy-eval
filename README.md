@@ -11,7 +11,7 @@ committed pi agents end to end, on any system.
   `skills/omarchy-eval-golden` (the golden VM chain runbook).
 - **Prompts**: `/eval-pr <N>`, `/eval-batch`, `/eval-cold-read <pr>`.
 - The binding lane contract lives in `opencharly/eval-omarchy`
-  (`eval/PR-EVAL-LANE.md` + `eval/references/*.md`); general eval procedure in the
+  (`skills/omarchy-eval-lane/SKILL.md` + `eval/references/*.md`); general eval procedure in the
   charly marketplace corpus (`/charly-distros:omarchy-eval`, `/charly-check:check`,
   `/charly-vm:vm`).
 
