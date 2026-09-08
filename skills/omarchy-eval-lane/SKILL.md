@@ -40,6 +40,17 @@ system with the umbrella project in pi can run the lane.
   and the publication gate (a comment posts ONLY behind operator approval; rendered
   from the template with the disclaimer verbatim + Assisted-by footer).
 
+## The FULL LOOP (binding)
+Every stage fully GRADES the work of the stage before it and can TRIGGER A CHANGE:
+redo-plan (the oracle re-authors the charly.yml when the config/checks do not set the PR
+up for a proper eval — the runner CONFIG AUDIT: pr-apply seam, known-red diff-ADDED
+markers at proven-landing paths, the FULL record:/spice: loop, only the two plugin
+provider candies, the PR's channel golden at 2G/1cpu, box validate green),
+redo-run (infra/lock/media-pull on a sound config), redo-read (media incomplete before
+grading), escalate (loop guard ≥3 redo entrances → council, never a silent re-run).
+A finding closes only with a setup change + re-run evidence. Contract:
+`opencharly/eval-omarchy` `eval/references/full-loop.md`.
+
 ## Lane rules (the binding single source)
 
 The 10 standing rules, tier semantics, oracle marker/path rules, media contract and
