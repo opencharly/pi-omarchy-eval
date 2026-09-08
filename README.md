@@ -7,8 +7,8 @@ committed pi agents end to end, on any system.
   (`opencharly/opencharly` `.pi/agents/omarchy-{config-oracle,eval-runner,supervisor,cold-reader}.md`),
   so the definitions are never duplicated (R3). This package ships the skills and the
   prompt surface.
-- **Skills**: `skills/omarchy-eval-lane` (the pi-agent lane + state machine),
-  `skills/omarchy-eval-golden` (the golden VM chain runbook).
+- **Skills**: `.agents/skills/omarchy-eval-lane` (the pi-agent lane + state machine),
+  `.agents/skills/omarchy-eval-golden` (the golden VM chain runbook).
 - **Prompts**: `/eval-pr <N>`, `/eval-batch`, `/eval-cold-read <pr>`.
 - The binding lane contract lives in `opencharly/eval-omarchy`
   (`eval/PR-EVAL-LANE.md` + `eval/references/*.md`); general eval procedure in the
