@@ -38,7 +38,7 @@ system with the umbrella project in pi can run the lane.
   ONE EVAL LANE PER CPU CORE default — nproc-derived, RAM-capped), MEASUREMENT
   (evals/min), the REDO state machine (disputes → council),
   and the publication gate (a comment posts ONLY behind operator approval; rendered
-  from the template with the disclaimer verbatim + Assisted-by footer).
+  from the template — what was tested and how, plus the Assisted-by footer).
 
 ## The FULL LOOP (binding)
 Every stage fully GRADES the work of the stage before it and can TRIGGER A CHANGE:
