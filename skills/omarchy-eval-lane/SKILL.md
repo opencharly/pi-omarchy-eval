@@ -20,18 +20,23 @@ system with the umbrella project in pi can run the lane.
 
 - **omarchy-config-oracle** (Stage 1): TRIAGE + PLAN — class, channel, tier, clone
   entity, check plan with known-red justification, recording plan, expected-phase
-  budget. Authors `pr-plans/eval-plan-<N>.json` + `pr-beds/pr-<N>/charly.yml` from the
-  committed template, gated by `charly box validate`. NEVER runs a bed.
+  budget. Authors `pr-beds/pr-<N>/charly.yml` DIRECTLY (the plan IS the charly.yml)
+  from the committed template, gated by `charly box validate`. NEVER runs a bed.
 - **omarchy-eval-runner** (Stage 2): RED-PROBE (must FAIL exit 2 on the golden) →
-  EVAL → EVIDENCE. Runs beds as persistent background tasks; enforces orphan
+  EVAL → FULL EVIDENCE EVALUATION (code/diff, check results, .cast screencast, media
+  frames/video → the complete evidence packet, both recording lanes non-empty) →
+  CLEANUP: NEVER leaves a VM running (destroy + domstate-gone verified; zero residual
+  domains/locks at handoff). Runs beds as persistent background tasks; enforces orphan
   discipline, head-freshness preflight, and golden re-provision duties. NEVER edits
   source.
-- **omarchy-cold-reader** (Stage 3): FRESH-context validation of the evidence packet
-  against the rubric + the 10 standing rules, using pi vision (vision_ask / pi.read)
-  AND deterministic evidence (.cast text, verbatim output). Emits SUBJECT + PROCESS
-  verdicts with findings.
-- **omarchy-eval-supervisor**: ORCHESTRATION (lane board, slot arbitration, 16-way
-  concurrency), MEASUREMENT (evals/min), the REDO state machine (disputes → council),
+- **omarchy-cold-reader** (Stage 3): FRESH-context, ARTIFACTS-ONLY validation of the
+  evidence packet against the rubric + the 10 standing rules, using pi vision
+  (vision_ask / pi.read) AND deterministic evidence (.cast text, verbatim output) —
+  NEVER from a running VM (the runner has torn everything down). Emits SUBJECT +
+  PROCESS verdicts with findings.
+- **omarchy-eval-supervisor**: ORCHESTRATION (lane board, slot arbitration,
+  ONE EVAL LANE PER CPU CORE default — nproc-derived, RAM-capped), MEASUREMENT
+  (evals/min), the REDO state machine (disputes → council),
   and the publication gate (a comment posts ONLY behind operator approval; rendered
   from the template with the disclaimer verbatim + Assisted-by footer).
 
